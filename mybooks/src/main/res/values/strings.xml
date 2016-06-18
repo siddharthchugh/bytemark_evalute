@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mybooks</string>
+    <string name="title_activity_detail">Book Detail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="done">Done</string>
+    <string name="seetings">Setting</string>
+    <string name="action_share">Share</string>
+    <string name="title_activity_update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="checkout">CheckOut</string>
+  <string name="lastcheckouttime">LastCheckedOut :</string>
+</resources>

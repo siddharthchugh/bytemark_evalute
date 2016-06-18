@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    tools:context="com.example.mybooks.UpdateFragment">
+
+
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/text_title"
+            android:layout_marginLeft="16dp"
+            android:text="@string/lastcheckouttime"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/text_title"
+            android:id="@+id/lastcheckedout" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/userCheck"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="LastCheckedOutBy"
+            android:layout_marginTop="45dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_button"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+        android:layout_margin="10dp"
+        android:id="@+id/send"
+        android:background="@drawable/ripplebutton"
+        android:layout_gravity="center_horizontal" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarUpdate"
+        android:gravity="center" />
+
+</LinearLayout>

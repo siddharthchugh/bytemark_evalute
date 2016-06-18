@@ -1,0 +1,224 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.mybooks.DetailFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/booktoolbar"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+      android:id="@+id/book_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLines="2"
+        android:textColor="@color/textPrimaryColor"
+        android:layout_gravity="start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/book_Author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondarTextColor"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+
+                android:layout_marginTop="10dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publisher"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/book_Publisher"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondarTextColor"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LastCheckedBy"
+                android:textColor="@color/text_color"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/CheckedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondarTextColor"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LastCheckOut"
+                android:textColor="@color/text_color"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/timeCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondarTextColor"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Url"
+                android:textColor="@color/text_color"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/book_Url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondarTextColor"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:padding="10dp"
+
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/lastcheckedby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout"
+        android:textSize="@dimen/text_button"
+        android:textColor="@color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripplebutton"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_gravity="center_horizontal"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.mybooks.DetailFragment">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/to_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/book_Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book Title"
+                android:layout_marginTop="45dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/book_Author"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Author"
+                android:layout_marginTop="45dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/publisher"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/book_Publisher"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Publisher"
+                android:layout_marginTop="45dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Author"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/book_Category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cateogries"
+                android:layout_marginTop="45dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/userlastcheck"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="LastCheckedOutBy"
+                android:layout_marginTop="45dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarAddData"
+
+            android:layout_gravity="center_horizontal" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/btnPost"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+            android:textSize="@dimen/text_button"
+           android:background="@drawable/ripplebutton"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
